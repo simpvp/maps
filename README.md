@@ -8,6 +8,8 @@ The map tiles themselves are gitignored (they are quite large,) but a list of th
 If you insist on wanting the tiles locally, then you're welcome to use those lists to download them from simplicitypvp.net.
 Just please limit yourself to no more than ~10Mbit/s.
 
+The js has been modified to use the tiles from simplicitypvp.net even the repo is cloned locally, so it should work to just lcone the repo and open index.html in a browser.
+
 ## License
 
 Content taken from the mapcrafter project is available under the license given by the mapcrafter project (GPLv3).

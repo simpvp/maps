@@ -1,6 +1,8 @@
 var MCTileLayer = L.TileLayer.extend({
 	initialize: function(url, options) {
-		this._url = url;
+		// baseUrl option custom added by simpvp
+		var baseUrl = (options["baseUrl"] === undefined) ? "" : options["baseUrl"];
+		this._url = baseUrl + url;
 		
 		this.imageFormat = options["imageFormat"];
 		
@@ -188,6 +190,7 @@ MapcrafterUI.prototype.createTileLayer = function(name, config, rotation) {
 		noWrap: true,
 		continuousWorld: true,
 		imageFormat: config.imageFormat,
+		baseUrl: config.baseUrl,
 	});
 	
 	return layer;
